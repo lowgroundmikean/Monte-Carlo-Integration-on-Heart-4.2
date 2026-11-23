@@ -1,0 +1,164 @@
+================================================================================
+PROBLEM 4.2  Monte Carlo area of a heart: plain vs. stratified
+reference area A = 3.66197
+================================================================================
+
+REQUIRED: 18 data points (6 tasks x 3 methods), 30 seeds each
+-------------------------------------------------------------
+task     p     total N method            mean rel err          std          RMS   seeds
+A1      16    5.76e+06 M1 whole box        2.0398e-04    1.259e-04   2.3859e-04      30
+A1      16    5.76e+06 M2 vertical         1.9852e-04    1.831e-04   2.6799e-04      30
+A1      16    5.76e+06 M3 cells            1.2832e-04    1.002e-04   1.6180e-04      30
+A2      16    5.76e+07 M1 whole box        5.0997e-05    4.973e-05   7.0647e-05      30
+A2      16    5.76e+07 M2 vertical         4.7939e-05    4.805e-05   6.7305e-05      30
+A2      16    5.76e+07 M3 cells            5.5270e-05    3.316e-05   6.4167e-05      30
+A3      16    5.76e+08 M1 whole box        2.1648e-05    1.771e-05   2.7782e-05      30
+A3      16    5.76e+08 M2 vertical         2.0580e-05    1.487e-05   2.5243e-05      30
+A3      16    5.76e+08 M3 cells            1.8179e-05    1.109e-05   2.1198e-05      30
+B1      36    5.76e+06 M1 whole box        2.0528e-04    1.589e-04   2.5799e-04      30
+B1      36    5.76e+06 M2 vertical         1.7636e-04    1.358e-04   2.2123e-04      30
+B1      36    5.76e+06 M3 cells            1.2157e-04    9.848e-05   1.5542e-04      30
+B2      36    5.76e+07 M1 whole box        6.6364e-05    4.720e-05   8.0979e-05      30
+B2      36    5.76e+07 M2 vertical         7.1461e-05    4.385e-05   8.3460e-05      30
+B2      36    5.76e+07 M3 cells            4.0369e-05    2.815e-05   4.8947e-05      30
+B3      36    5.76e+08 M1 whole box        2.1643e-05    1.577e-05   2.6624e-05      30
+B3      36    5.76e+08 M2 vertical         1.9817e-05    1.616e-05   2.5401e-05      30
+B3      36    5.76e+08 M3 cells            1.4326e-05    1.155e-05   1.8279e-05      30
+
+BONUS: 9 data points (3 tasks x 3 methods), 30 seeds each
+---------------------------------------------------------
+task     p     total N method            mean rel err          std          RMS   seeds
+C1      64    5.76e+06 M1 whole box        1.9596e-04    1.541e-04   2.4767e-04      30
+C1      64    5.76e+06 M2 vertical         2.0192e-04    1.454e-04   2.4742e-04      30
+C1      64    5.76e+06 M3 cells            1.1135e-04    8.786e-05   1.4093e-04      30
+C2      64    5.76e+07 M1 whole box        5.7100e-05    3.840e-05   6.8451e-05      30
+C2      64    5.76e+07 M2 vertical         8.0520e-05    6.027e-05   9.9977e-05      30
+C2      64    5.76e+07 M3 cells            2.8619e-05    2.434e-05   3.7306e-05      30
+C3      64    5.76e+08 M1 whole box        2.2626e-05    1.697e-05   2.8113e-05      30
+C3      64    5.76e+08 M2 vertical         1.6331e-05    1.264e-05   2.0525e-05      30
+C3      64    5.76e+08 M3 cells            1.1355e-05    1.042e-05   1.5292e-05      30
+
+SUPPLEMENTARY: horizontal slices, evidence for Report Q3
+--------------------------------------------------------
+task     p     total N method            mean rel err          std          RMS   seeds
+A1      16    5.76e+06 M2 horizontal       1.8534e-04    1.278e-04   2.2390e-04      30
+A2      16    5.76e+07 M2 horizontal       4.3545e-05    2.800e-05   5.1516e-05      30
+A3      16    5.76e+08 M2 horizontal       1.7099e-05    1.104e-05   2.0254e-05      30
+B1      36    5.76e+06 M2 horizontal       1.3893e-04    9.247e-05   1.6604e-04      30
+B2      36    5.76e+07 M2 horizontal       5.7625e-05    4.417e-05   7.2155e-05      30
+B3      36    5.76e+08 M2 horizontal       1.5354e-05    1.165e-05   1.9156e-05      30
+C1      64    5.76e+06 M2 horizontal       1.5801e-04    1.168e-04   1.9531e-04      30
+C2      64    5.76e+07 M2 horizontal       5.6916e-05    2.707e-05   6.2832e-05      30
+C3      64    5.76e+08 M2 horizontal       1.8953e-05    1.143e-05   2.2036e-05      30
+
+SUPPLEMENTARY: 200 seeds at N = 5.76e6, to resolve close methods
+----------------------------------------------------------------
+task     p     total N method            mean rel err          std          RMS   seeds
+S16     16    5.76e+06 M1 whole box        2.1125e-04    1.724e-04   2.7242e-04     200
+S16     16    5.76e+06 M2 vertical         1.9081e-04    1.454e-04   2.3967e-04     200
+S16     16    5.76e+06 M3 cells            1.4807e-04    1.152e-04   1.8745e-04     200
+S16     16    5.76e+06 M2 horizontal       1.6948e-04    1.188e-04   2.0680e-04     200
+S36     36    5.76e+06 M1 whole box        1.9541e-04    1.541e-04   2.4864e-04     200
+S36     36    5.76e+06 M2 vertical         2.0236e-04    1.477e-04   2.5034e-04     200
+S36     36    5.76e+06 M3 cells            1.1913e-04    9.059e-05   1.4952e-04     200
+S36     36    5.76e+06 M2 horizontal       1.5625e-04    1.176e-04   1.9537e-04     200
+S64     64    5.76e+06 M1 whole box        2.0609e-04    1.624e-04   2.6215e-04     200
+S64     64    5.76e+06 M2 vertical         1.8467e-04    1.260e-04   2.2337e-04     200
+S64     64    5.76e+06 M3 cells            1.1419e-04    8.447e-05   1.4191e-04     200
+S64     64    5.76e+06 M2 horizontal       1.6594e-04    1.231e-04   2.0642e-04     200
+
+Q2  STRATIFICATION GAIN: RMS relative error / Method 1's
+--------------------------------------------------------------
+task     M2 vertical   M2 horizontal    M3 cells
+A1             1.123           0.938       0.678
+A2             0.953           0.729       0.908
+A3             0.909           0.729       0.763
+B1             0.858           0.644       0.602
+B2             1.031           0.891       0.604
+B3             0.954           0.719       0.687
+C1             0.999           0.789       0.569
+C2             1.461           0.918       0.545
+C3             0.730           0.784       0.544
+S16            0.880           0.759       0.688
+S36            1.007           0.786       0.601
+S64            0.852           0.787       0.541
+
+Below 1 means the method beat plain Monte Carlo.
+Square these to get the variance reduction factor.
+
+Q4  BONUS: RMS relative error at fixed total N, as p grows
+--------------------------------------------------------------
+
+  N = 5.76e6, 30 seeds
+  method                     p=16           p=36           p=64
+  M1 whole box         2.3859e-04     2.5799e-04     2.4767e-04
+  M2 vertical          2.6799e-04     2.2123e-04     2.4742e-04
+  M3 cells             1.6180e-04     1.5542e-04     1.4093e-04
+  M2 horizontal        2.2390e-04     1.6604e-04     1.9531e-04
+
+  N = 5.76e7, 30 seeds
+  method                     p=16           p=36           p=64
+  M1 whole box         7.0647e-05     8.0979e-05     6.8451e-05
+  M2 vertical          6.7305e-05     8.3460e-05     9.9977e-05
+  M3 cells             6.4167e-05     4.8947e-05     3.7306e-05
+  M2 horizontal        5.1516e-05     7.2155e-05     6.2832e-05
+
+  N = 5.76e8, 30 seeds
+  method                     p=16           p=36           p=64
+  M1 whole box         2.7782e-05     2.6624e-05     2.8113e-05
+  M2 vertical          2.5243e-05     2.5401e-05     2.0525e-05
+  M3 cells             2.1198e-05     1.8279e-05     1.5292e-05
+  M2 horizontal        2.0254e-05     1.9156e-05     2.2036e-05
+
+  N = 5.76e6, 200 seeds
+  method                     p=16           p=36           p=64
+  M1 whole box         2.7242e-04     2.4864e-04     2.6215e-04
+  M2 vertical          2.3967e-04     2.5034e-04     2.2337e-04
+  M3 cells             1.8745e-04     1.4952e-04     1.4191e-04
+  M2 horizontal        2.0680e-04     1.9537e-04     2.0642e-04
+
+Prediction: Method 3 scales as N^(-1/2) p^(-1/4); Methods 1 and 2
+carry no p dependence once N is held fixed.
+
+PLOT DATA  (mean relative error vs total samples, log-log)
+--------------------------------------------------------------
+p,method,total_samples,mean_rel_err,rms_rel_err
+16,M1 whole box,5760000,2.039849e-04,2.385889e-04
+16,M1 whole box,57600000,5.099705e-05,7.064671e-05
+16,M1 whole box,576000000,2.164782e-05,2.778218e-05
+16,M2 vertical,5760000,1.985176e-04,2.679893e-04
+16,M2 vertical,57600000,4.793852e-05,6.730512e-05
+16,M2 vertical,576000000,2.058043e-05,2.524298e-05
+16,M3 cells,5760000,1.283162e-04,1.617951e-04
+16,M3 cells,57600000,5.527009e-05,6.416708e-05
+16,M3 cells,576000000,1.817931e-05,2.119785e-05
+16,M2 horizontal,5760000,1.853444e-04,2.239033e-04
+16,M2 horizontal,57600000,4.354469e-05,5.151594e-05
+16,M2 horizontal,576000000,1.709912e-05,2.025442e-05
+36,M1 whole box,5760000,2.052848e-04,2.579910e-04
+36,M1 whole box,57600000,6.636421e-05,8.097913e-05
+36,M1 whole box,576000000,2.164300e-05,2.662361e-05
+36,M2 vertical,5760000,1.763596e-04,2.212279e-04
+36,M2 vertical,57600000,7.146054e-05,8.346000e-05
+36,M2 vertical,576000000,1.981737e-05,2.540059e-05
+36,M3 cells,5760000,1.215721e-04,1.554187e-04
+36,M3 cells,57600000,4.036906e-05,4.894703e-05
+36,M3 cells,576000000,1.432617e-05,1.827904e-05
+36,M2 horizontal,5760000,1.389332e-04,1.660351e-04
+36,M2 horizontal,57600000,5.762487e-05,7.215478e-05
+36,M2 horizontal,576000000,1.535420e-05,1.915568e-05
+64,M1 whole box,5760000,1.959606e-04,2.476730e-04
+64,M1 whole box,57600000,5.710032e-05,6.845073e-05
+64,M1 whole box,576000000,2.262583e-05,2.811309e-05
+64,M2 vertical,5760000,2.019204e-04,2.474233e-04
+64,M2 vertical,57600000,8.051972e-05,9.997659e-05
+64,M2 vertical,576000000,1.633149e-05,2.052453e-05
+64,M3 cells,5760000,1.113509e-04,1.409287e-04
+64,M3 cells,57600000,2.861914e-05,3.730599e-05
+64,M3 cells,576000000,1.135466e-05,1.529230e-05
+64,M2 horizontal,5760000,1.580135e-04,1.953116e-04
+64,M2 horizontal,57600000,5.691593e-05,6.283191e-05
+64,M2 horizontal,576000000,1.895271e-05,2.203642e-05
+
+[matplotlib unavailable: No module named 'matplotlib']
+[paste the PLOT DATA block above to draw the figure elsewhere]

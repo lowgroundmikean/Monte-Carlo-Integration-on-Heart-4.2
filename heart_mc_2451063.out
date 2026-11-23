@@ -1,0 +1,26 @@
+mpienv: loaded mvapich2
+host      : xm046
+date      : Sun Nov 22 10:47:01 PM EST 2026
+job id    : 2451063
+partition : hbm-1tb-long-96core
+compiler  : gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-14)
+
+build OK
+
+launcher  : mpirun -n
+
+>>> task=A1 p=16 n=360000 seeds=30   (22:47:02)
+>>> task=A2 p=16 n=3600000 seeds=30   (22:47:02)
+>>> task=A3 p=16 n=36000000 seeds=30   (22:47:04)
+>>> task=B1 p=36 n=160000 seeds=30   (22:47:20)
+>>> task=B2 p=36 n=1600000 seeds=30   (22:47:20)
+>>> task=B3 p=36 n=16000000 seeds=30   (22:47:22)
+>>> task=C1 p=64 n=90000 seeds=30   (22:47:31)
+>>> task=C2 p=64 n=900000 seeds=30   (22:47:32)
+>>> task=C3 p=64 n=9000000 seeds=30   (22:47:33)
+>>> task=S16 p=16 n=360000 seeds=200   (22:47:40)
+>>> task=S36 p=36 n=160000 seeds=200   (22:47:42)
+>>> task=S64 p=64 n=90000 seeds=200   (22:47:43)
+
+wrote results_2451063.csv  (3481 lines)
+done: Sun Nov 22 10:47:44 PM EST 2026
